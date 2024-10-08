@@ -380,7 +380,8 @@ Route::group(['middleware' => ['auth:user', 'sidemenu']], function () {
             //支払計上入力
             Route::get('/accountant', [TrnPayHeaderController::class, 'showAccountant'])->name('accountant.index');  //初期表示
             Route::post('/accountant', [TrnPayHeaderController::class, 'updateAccountant'])->name('accountant.update');  //更新
-
+            
+            Route::get('/get_search_supplier_all', [SearchModalController::class, 'getSearchSupplierAll'])->name('accountant.getSearchSupplierAll');
             //買掛残高一覧表
             Route::get('/list', [TrnPayHeaderController::class, 'showList'])->name('list.index');  //初期表示
             Route::post('/list', [TrnPayHeaderController::class, 'exportList'])->name('list.export');  //Excel出力

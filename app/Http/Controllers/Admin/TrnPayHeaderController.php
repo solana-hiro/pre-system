@@ -13,6 +13,7 @@ use App\Http\Requests\TrnPayHeader\SupplierLedgerRequest;
 use App\Http\Requests\TrnPayHeader\UpdateClosingDateRequest;
 use App\Http\Requests\TrnPayHeader\UpdateSequentiallyClosingRequest;
 use App\Http\Requests\TrnPayHeader\UpdateSequentiallyClosingRemoveRequest;
+use App\Models\TrnPayHeader;
 
 class TrnPayHeaderController extends Controller
 {
@@ -233,14 +234,18 @@ class TrnPayHeaderController extends Controller
 
     /**
      * 支払計上入力  初期表示
-     * @param $request
-     * @param $service
-     * @return Object
+     * @param Request $request
+     * @return \Illuminate\View\View
      */
     public function showAccountant(Request $request)
     {
-      
-		  return view('admin.purchase.trn_pay_header.accountantIndex', ['commonParams' => $this->commonParams]);
+        $perPage = 15;
+        $payData = TrnPayHeader::paginate($perPage);
+
+        return view('admin.purchase.trn_pay_header.accountantIndex', [
+            'commonParams' => $this->commonParams,
+            'payData' => $payData
+        ]);
     }
 
     /**
