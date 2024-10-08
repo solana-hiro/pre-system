@@ -1,0 +1,148 @@
+#menu-frame .text_wrapper {
+  font-size: 16px;
+}
+
+.accordion-menu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 10px 0px 8px;
+  gap: 8px;
+  width: 200px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.main_menu {
+  width: 100%;
+}
+
+.accordion-menu-child1 li {
+  width: 100%;
+  padding: 15px 0 8px 15px;
+}
+
+.sub_menu {
+  display: inline-flex;
+  width: 100%;
+}
+
+.accordion-menu-child2 li {
+  width: 100%;
+  padding: 20px 0 10px 25px;
+  margin: 6px 0;
+}
+
+.sub_child_menu {
+  display: inline-flex;
+  width: 100%;
+}
+
+.accordion-menu a {
+  text-decoration: none;
+  display: inline-flex;
+
+}
+
+.sub_menu a {
+  text-decoration: none;
+  display: inline-flex;
+
+}
+
+.sub_child_menu a {
+  text-decoration: none;
+  display: inline-flex;
+
+}
+
+.toggle_title {
+  font-weight: bold;
+  line-height: 42px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.toggle_title:hover {
+  background-color: #999999;
+}
+
+.bg-arrow-right {
+  background: url(/img/icon/arrow-right.svg) no-repeat left center;
+}
+
+.sidemenu1.selected {
+  background: url(/img/icon/arrow-down-menu.svg) no-repeat left center;
+  color: #408BEB;
+}
+
+.sidemenu2.selected {
+  background: url(/img/icon/arrow-down-menu.svg) no-repeat left center;
+  background-color: #408BEB;
+  color: #F9F9F9;
+}
+
+.toggle_txt {
+  display: none;
+}
+
+/* 2階層目　*/
+.toggle_title_sub {
+  font-weight: bold;
+  line-height: 42px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.toggle_txt_sub {
+  display: none;
+}
+
+.toggle_title_sub2 .text_wrapper {
+  color: #999999;
+}
+
+.toggle_title_sub2 .text_wrapper:hover {
+  color: #222222;
+}
+
+.toggle_title_sub2.selected .text_wrapper {
+  color: #408BEB;
+}
+
+/* .toggle_btn_sub2 {
+  display: inline-block;
+  width: 80%;
+  height: 32px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.toggle_btn_sub2.selected {
+  background-color: #F9F9F9;
+  color: #408BEB;
+}
+
+.toggle_btn_sub2.selected .text_wrapper {
+  color: #408BEB;
+}
+
+.toggle_btn_sub2:hover {
+  background-color: #F3F8FF;
+  color: #222222;
+} */
+
+.subArea__nav {
+  * {
+    padding: 0;
+  }
+
+  .accordion-menu {
+    width: 100%;
+    max-width: 202px;
+    margin: 0px auto 20px;
+  }
+}

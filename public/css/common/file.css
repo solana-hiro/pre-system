@@ -1,0 +1,65 @@
+body {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	font-size: 12px;
+}
+
+.table-wrap {
+   overflow-y: scroll;
+}
+
+table {
+  border: solid 1px #000000;
+  border-collapse: collapse;
+  min-width: 40%;
+  max-height:600px;
+  max-width:100%;
+  position: sticky;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+table tr {
+  width: fit-content;
+  text-align: left;
+}
+
+tbody th {
+  text-align: left;
+}
+
+tbody td {
+  text-align: left;
+}
+table tr
+table td {
+  border: solid 1px #000000;
+  border-collapse: collapse;
+  width: fit-content;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.backcolor_red {
+    background-color: #FF0000;
+}

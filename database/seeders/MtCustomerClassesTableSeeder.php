@@ -1,0 +1,226 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
+use App\Models\MtCustomerClass;
+
+class MtCustomerClassesTableSeeder extends Seeder
+{
+
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Schema::disableForeignKeyConstraints(); //外部キーチェック無効
+        MtCustomerClass::truncate();
+        Schema::enableForeignKeyConstraints(); //外部キーチェック有効
+
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0010', 'customer_class_name' => 'スポーツ卸業', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0011', 'customer_class_name' => '無地ボディー卸業', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0020', 'customer_class_name' => 'スポーツ小売業', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0025', 'customer_class_name' => '学校衣料', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0030', 'customer_class_name' => '二次加工', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0031', 'customer_class_name' => 'デザイン・企画', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0040', 'customer_class_name' => 'ユニフォーム', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0050', 'customer_class_name' => 'メーカー', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0060', 'customer_class_name' => 'EC運営会社', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0061', 'customer_class_name' => 'SP・イベント', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0070', 'customer_class_name' => '施設・団体', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0080', 'customer_class_name' => 'マーキング資料', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0098', 'customer_class_name' => 'ﾀﾞｲﾚｸﾄtoｺﾝｼｭｰﾏｰ', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '0099', 'customer_class_name' => '直販', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '8888', 'customer_class_name' => '分類不可', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 1, 'customer_class_cd' => '9999', 'customer_class_name' => 'その他', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0010', 'customer_class_name' => 'スポーツ問屋（総合）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0011', 'customer_class_name' => 'スポーツ問屋（水着）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0012', 'customer_class_name' => 'スポーツ問屋（陸上）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0013', 'customer_class_name' => 'スポーツ問屋（野球）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0014', 'customer_class_name' => 'スポーツ問屋（専門）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0015', 'customer_class_name' => 'ｲﾝﾌﾟﾘﾝﾀﾌﾞﾙｳｴｱ卸', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0020', 'customer_class_name' => 'ｽﾎﾟｰﾂ店(EC･通販型)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0021', 'customer_class_name' => 'ｽﾎﾟｰﾂ店(店舗販売型)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0022', 'customer_class_name' => 'ｽﾎﾟｰﾂ店(ﾏﾙﾁ型)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0030', 'customer_class_name' => 'ｵﾘｼﾞﾅﾙｳｪｱ(EC･通販型)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0031', 'customer_class_name' => 'ｵﾘｼﾞﾅﾙｳｪｱ(店舗販売型', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0032', 'customer_class_name' => 'ｵﾘｼﾞﾅﾙｳｪｱ(ﾏﾙﾁ型)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0040', 'customer_class_name' => '外商型（BtoC）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0041', 'customer_class_name' => '外商型(SP団体・施設)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0042', 'customer_class_name' => '外商型（一般企業）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0044', 'customer_class_name' => '外商型（学校）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0045', 'customer_class_name' => '外商型(幼稚園･保育園', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0046', 'customer_class_name' => '外商型（役所）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0047', 'customer_class_name' => '外商型（自衛隊）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0048', 'customer_class_name' => '外商型（警察・消防）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0060', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ｻｯｶｰ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0061', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾊﾞｽｹ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0062', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾊﾞﾚｰ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0063', 'customer_class_name' => 'プロショップ（野球）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0064', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾗｸﾞﾋﾞｰ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0065', 'customer_class_name' => 'プロショップ（陸上）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0066', 'customer_class_name' => 'プロショップ（体操）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0067', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾗｹｯﾄ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0068', 'customer_class_name' => 'プロショップ（水泳）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0069', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(格闘技)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0070', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾎﾞｰﾘﾝｸﾞ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0071', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ(ﾊﾝﾄﾞﾎﾞｰﾙ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0072', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ（ゴルフ）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0073', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ（剣道）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0074', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ（アメフト）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0075', 'customer_class_name' => 'ﾌﾟﾛｼｮｯﾌﾟ（ホッケー）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0080', 'customer_class_name' => 'マーキング資材', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0100', 'customer_class_name' => 'ｽﾎﾟｰﾂﾏｰｷﾝｸﾞ業者', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0101', 'customer_class_name' => 'ﾌﾟﾘﾝﾄ・ﾏｰｷﾝｸﾞ業者', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0110', 'customer_class_name' => 'ｻｯｶｰ中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0111', 'customer_class_name' => '野球中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0112', 'customer_class_name' => 'バスケ中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0113', 'customer_class_name' => 'バレー中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0114', 'customer_class_name' => 'ラケット中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0115', 'customer_class_name' => '卓球中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0116', 'customer_class_name' => '格闘技中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0117', 'customer_class_name' => 'レスリング中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0118', 'customer_class_name' => '陸上中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0119', 'customer_class_name' => '体操中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0120', 'customer_class_name' => 'ラグビー中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0121', 'customer_class_name' => '水泳中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0122', 'customer_class_name' => '柔道中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0123', 'customer_class_name' => 'ゴルフ中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0124', 'customer_class_name' => 'ボーリング中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0125', 'customer_class_name' => 'ｹﾞｰﾄﾎﾞｰﾙ中心･専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0126', 'customer_class_name' => 'アメフト中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0127', 'customer_class_name' => 'スキー中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0128', 'customer_class_name' => 'ﾊﾞﾚｰ･ﾀﾞﾝｽ中心･専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0129', 'customer_class_name' => '剣道中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0130', 'customer_class_name' => 'ホッケー中心・専門', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0150', 'customer_class_name' => 'ｵﾌｨｽ・ﾕﾆﾌｫｰﾑ販売', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0151', 'customer_class_name' => '白衣・ﾕﾆﾌｫｰﾑ販売', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0152', 'customer_class_name' => '介護・ﾕﾆﾌｫｰﾑ販売', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0153', 'customer_class_name' => 'ﾜｰｷﾝｸﾞ・ﾕﾆﾌｫｰﾑ販売', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0200', 'customer_class_name' => '学販（ﾒｰｶｰ卸）', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0300', 'customer_class_name' => '授産施設', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0400', 'customer_class_name' => '学校(ｲﾝﾀｰﾅｼｮﾅﾙｽｸｰﾙ)', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '0999', 'customer_class_name' => '直販', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '8888', 'customer_class_name' => '分類不可', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 2, 'customer_class_cd' => '9999', 'customer_class_name' => 'その他', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0120', 'customer_class_name' => 'A-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0121', 'customer_class_name' => 'A-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0122', 'customer_class_name' => 'A-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0123', 'customer_class_name' => 'A-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0124', 'customer_class_name' => 'A-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0125', 'customer_class_name' => 'A-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0126', 'customer_class_name' => 'A-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0127', 'customer_class_name' => 'A-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0128', 'customer_class_name' => 'A-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0129', 'customer_class_name' => 'A-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0130', 'customer_class_name' => 'A-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0131', 'customer_class_name' => 'A-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0132', 'customer_class_name' => 'A-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0140', 'customer_class_name' => 'A-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0150', 'customer_class_name' => 'A-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0199', 'customer_class_name' => 'A-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0220', 'customer_class_name' => 'B-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0221', 'customer_class_name' => 'B-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0222', 'customer_class_name' => 'B-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0223', 'customer_class_name' => 'B-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0224', 'customer_class_name' => 'B-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0225', 'customer_class_name' => 'B-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0226', 'customer_class_name' => 'B-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0227', 'customer_class_name' => 'B-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0228', 'customer_class_name' => 'B-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0229', 'customer_class_name' => 'B-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0230', 'customer_class_name' => 'B-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0231', 'customer_class_name' => 'B-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0232', 'customer_class_name' => 'B-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0240', 'customer_class_name' => 'B-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0250', 'customer_class_name' => 'B-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0299', 'customer_class_name' => 'B-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0320', 'customer_class_name' => 'C-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0321', 'customer_class_name' => 'C-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0322', 'customer_class_name' => 'C-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0323', 'customer_class_name' => 'C-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0324', 'customer_class_name' => 'C-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0325', 'customer_class_name' => 'C-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0326', 'customer_class_name' => 'C-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0327', 'customer_class_name' => 'C-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0328', 'customer_class_name' => 'C-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0329', 'customer_class_name' => 'C-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0330', 'customer_class_name' => 'C-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0331', 'customer_class_name' => 'C-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0332', 'customer_class_name' => 'C-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0340', 'customer_class_name' => 'C-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0350', 'customer_class_name' => 'C-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0399', 'customer_class_name' => 'C-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0420', 'customer_class_name' => 'D-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0421', 'customer_class_name' => 'D-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0422', 'customer_class_name' => 'D-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0423', 'customer_class_name' => 'D-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0424', 'customer_class_name' => 'D-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0425', 'customer_class_name' => 'D-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0426', 'customer_class_name' => 'D-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0427', 'customer_class_name' => 'D-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0428', 'customer_class_name' => 'D-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0429', 'customer_class_name' => 'D-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0430', 'customer_class_name' => 'D-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0431', 'customer_class_name' => 'D-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0432', 'customer_class_name' => 'D-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0440', 'customer_class_name' => 'D-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0450', 'customer_class_name' => 'D-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0499', 'customer_class_name' => 'D-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0520', 'customer_class_name' => 'E-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0521', 'customer_class_name' => 'E-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0522', 'customer_class_name' => 'E-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0523', 'customer_class_name' => 'E-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0524', 'customer_class_name' => 'E-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0525', 'customer_class_name' => 'E-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0526', 'customer_class_name' => 'E-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0527', 'customer_class_name' => 'E-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0528', 'customer_class_name' => 'E-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0529', 'customer_class_name' => 'E-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0530', 'customer_class_name' => 'E-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0531', 'customer_class_name' => 'E-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0532', 'customer_class_name' => 'E-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0540', 'customer_class_name' => 'E-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0550', 'customer_class_name' => 'E-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0599', 'customer_class_name' => 'E-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0620', 'customer_class_name' => 'Z-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0621', 'customer_class_name' => 'Z-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0622', 'customer_class_name' => 'Z-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0623', 'customer_class_name' => 'Z-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0624', 'customer_class_name' => 'Z-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0625', 'customer_class_name' => 'Z-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0626', 'customer_class_name' => 'Z-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0627', 'customer_class_name' => 'Z-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0628', 'customer_class_name' => 'Z-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0629', 'customer_class_name' => 'Z-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0630', 'customer_class_name' => 'Z-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0631', 'customer_class_name' => 'Z-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0632', 'customer_class_name' => 'Z-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0640', 'customer_class_name' => 'Z-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0650', 'customer_class_name' => 'Z-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0699', 'customer_class_name' => 'Z-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0820', 'customer_class_name' => 'N-40', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0821', 'customer_class_name' => 'N-41', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0822', 'customer_class_name' => 'N-42', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0823', 'customer_class_name' => 'N-43', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0824', 'customer_class_name' => 'N-44', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0825', 'customer_class_name' => 'N-45', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0826', 'customer_class_name' => 'N-46', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0827', 'customer_class_name' => 'N-47', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0828', 'customer_class_name' => 'N-48', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0829', 'customer_class_name' => 'N-49', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0830', 'customer_class_name' => 'N-50', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0831', 'customer_class_name' => 'N-51', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0832', 'customer_class_name' => 'N-52', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0840', 'customer_class_name' => 'N-60', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0845', 'customer_class_name' => 'N-65', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0850', 'customer_class_name' => 'N-70', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '0899', 'customer_class_name' => 'N-100', 'mt_user_last_update_id' => 1]);
+		$model = MtCustomerClass::create(['def_customer_class_thing_id' => 3, 'customer_class_cd' => '9999', 'customer_class_name' => 'ランクなし', 'mt_user_last_update_id' => 1]);
+
+    }
+
+}

@@ -1,0 +1,69 @@
+@extends('layouts.admin.file')
+@section('page_title', '一覧表')
+@section('title', '一覧表')
+@section('content')
+
+<table>
+    <thead>
+        <tr>
+			<th>JANコード</th>
+			<th>他品番</th>
+			<th>商品コード</th>
+			<th>商品名</th>
+			<th>カラーコード</th>
+			<th>カラー名</th>
+			<th>サイズコード</th>
+			<th>サイズ名</th>
+			<th>単位名</th>
+			<th>原価単価</th>
+			<th>計算前_当月末在庫数</th>
+			<th>計算前_当月末在庫金額</th>
+			<th>計算前_4年前在庫数</th>
+			<th>4年前仕入数</th>
+			<th>4年前入庫数</th>
+			<th>4年前売上数</th>
+			<th>4年前出庫数</th>
+			<th>3年前仕入数</th>
+			<th>3年前入庫数</th>
+			<th>3年前売上数</th>
+			<th>3年前出庫数</th>
+			<th>2年前仕入数</th>
+			<th>2年前入庫数</th>
+			<th>2年前売上数</th>
+			<th>2年前出庫数</th>
+			<th>1年前仕入数</th>
+			<th>1年前入庫数</th>
+			<th>1年前売上数</th>
+			<th>1年前出庫数</th>
+			<th>計算_4年前在庫残数</th>
+			<th>4年前在庫残数</th>
+			<th>計算_3年前在庫残数</th>
+			<th>3年前在庫残数</th>
+			<th>計算_2年前在庫残数</th>
+			<th>2年前在庫残数</th>
+			<th>計算_1年前在庫残数</th>
+			<th>1年前在庫残数</th>
+			<th>当年在庫残数</th>
+			<th>在庫数（4年以上）</th>
+			<th>在庫数（3年以上4年未満）</th>
+			<th>在庫数（2年以上3年未満）</th>
+			<th>在庫数（1年以上2年未満）</th>
+			<th>在庫数（1年未満）</th>
+			<th>4年以上査定在庫金額</th>
+			<th>4年未満3年以上査定在庫金額</th>
+			<th>3年未満2年以上査定在庫金額</th>
+			<th>2年未満1年以上査定在庫金額</th>
+			<th>1年未満査定在庫金額</th>
+			<th>査定在庫金額</th>
+		</tr>
+    </thead>
+    <tbody>
+        @foreach($params['datas'] as $data)
+            <tr>
+				<td></td>
+				<td></td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
+@endsection

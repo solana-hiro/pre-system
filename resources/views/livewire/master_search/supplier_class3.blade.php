@@ -1,0 +1,46 @@
+<div>
+    <div class="button_area">
+        <button class="button" type="button" id="execute_search_supplier_class3" wire:click="search">
+            <div class="button-text_wrapper">実行する</div>
+        </button>
+    </div>
+    <div class="element-form-rows">
+        <div class="element-form">
+            <div class="text_wrapper">仕入先分類3コード</div>
+            <div class="frame">
+                <div class="textbox">
+                    <input type="text" name="supplier_class3_cd" id="supplier_class3_cd" class="element"
+                        minlength="0" maxlength="6" size="6" wire:model="supplierClassCd">
+                </div>
+            </div>
+        </div>
+        <div class="element-form">
+            <div class="text_wrapper">仕入先分類3名(部分)</div>
+            <div class="frame">
+                <div class="textbox">
+                    <input type="text" name="supplier_class3_name" id="supplier_class3_name" class="element"
+                        minlength="0" maxlength="20" size="20" wire:model="supplierClassName">
+                </div>
+            </div>
+        </div>
+    </div>
+    @include('livewire.master_search.paginate_button', ['list' => $supplierClass3Data])
+    <div class="grid">
+        <table class="table_sticky">
+            <thead class="grid_header">
+                <tr>
+                    <td class="grid_wrapper_center td_5p">仕入先分類3コード</td>
+                    <td class="grid_wrapper_center td_10p">仕入先分類3名</td>
+                </tr>
+            </thead>
+            <tbody class="tbody_scroll" id="supplier_class3_rec">
+                @foreach ($supplierClass3Data as $data)
+                    <tr data-smm-dbclick="{{ $data->supplier_class_cd }}">
+                        <td class="grid_wrapper_left">{{ $data['supplier_class_cd'] }}</td>
+                        <td class="grid_wrapper_left">{{ $data['supplier_class_name'] }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+</div>

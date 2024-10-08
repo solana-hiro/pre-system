@@ -1,0 +1,1 @@
+export * as SelectImage from './src/event.js'
